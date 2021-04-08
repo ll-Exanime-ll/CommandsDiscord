@@ -9,7 +9,7 @@ module.exports = {
   category: "Suggestions",
   description: "Suggestions approved",
   run: async (client, message, args) => {
-    if (message.author.id !== "id") return; //If you want the message to be sent to a specific channel.
+    if (message.author.id !== "id") return; //This will only respond to the Discord profile of that ID (delete if you want everyone to be able to use this command).
     message.delete();
     let user = message.mentions.users.first() || message.author;
     let canal = client.channels.resolve('id') //ID of the channel you want the suggestion to be sent.
