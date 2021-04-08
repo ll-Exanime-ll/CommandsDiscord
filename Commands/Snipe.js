@@ -27,3 +27,14 @@ if(!msg){
   }
 }
 }
+
+
+// Where you have 'Index.js' or 'server.js' put this aside:
+
+client.on('messageDelete', message => {
+  client.snipes.set(message.channel.id, {
+    content: message.content,
+    delete: message.author,
+    canal: message.channel
+  })
+})
