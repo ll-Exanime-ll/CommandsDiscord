@@ -21,7 +21,7 @@ function getAll(client, message) {
     .setAuthor("Need help?")
     .setTitle(
       "> To see my commands Use: ``+commands`` \n> To see information about a command use: ``+help <Command>`` \n> More information in: https://discord-exabot.glitch.me/")
-   .setFooter("Create by Exánime#0027");
+   .setFooter("Create by Exánime");
   if (!message.guild.me.hasPermission("EMBED_LINKS")) {
     return message.channel.send("I don't have permissions for ember messages");
   }
