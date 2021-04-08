@@ -31,6 +31,8 @@ if(!msg){
 
 // Where you have 'Index.js' or 'server.js' put this aside:
 
+client.snipes = new Map()
+
 client.on('messageDelete', message => {
   client.snipes.set(message.channel.id, {
     content: message.content,
