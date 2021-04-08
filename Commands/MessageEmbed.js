@@ -11,7 +11,7 @@ module.exports = {
   run: async (client, message, args) => {
     if (message.author.id !== "id") return; //This will only respond to the Discord profile of that ID (delete if you want everyone to be able to use this command).
     message.delete();
-    //let canal = client.channels.resolve('693917720726601818') //If you want the message to be sent to a specific channel
+    //let canal = client.channels.resolve('id') //If you want the message to be sent to a specific channel
     const embedDatos = new Discord.MessageEmbed() 
     .setTitle("New Commands:")
     .setDescription("``+invites``\n\nMore command information: ``+help <command>``")
